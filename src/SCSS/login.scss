@@ -1,0 +1,84 @@
+.sign-in {
+    padding: 20px 0;
+
+    .login-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 2rem 2rem 2rem;
+            flex-basis: 100%;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 2px 2px rgba(20,20,20,0.4);
+            border-radius: 10%;
+            border: 0.002px solid rgba(0,0,0,0.1);
+            max-width: 400px;
+            align-content: space-between;
+            vertical-align: center;
+
+            &:hover {
+                box-shadow: 2px 2px 4px 3px rgba(20,20,20,0.5);
+                transition: all 0.4s ease;
+            }
+
+            .head {
+                margin-left: 40%;
+                margin-right: 40%
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+                margin-top: 2rem;
+
+                .or {
+                    text-align: center;
+                    color: rgba(0,0,0,0.5);
+                }
+            }
+        }
+
+        .imgWrap {
+            flex-basis: 55%;
+            margin-bottom: 2rem;
+
+            .svg {
+                max-width: 95%;
+
+                img {
+                    width: 100%;
+                    vertical-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 968px) {
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        
+        .box-container {
+            vertical-align: middle;
+            margin-top: 0px;
+            min-width: 50%;
+        }
+        .imgWrap {
+            max-width: 0%;
+        }
+
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .box-container {
+        vertical-align: center;
+        margin-top: -4.5rem;
+    }
+}

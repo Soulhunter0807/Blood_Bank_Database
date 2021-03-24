@@ -1,0 +1,29 @@
+.searchBox-container {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    min-width: 50px;
+
+    .input-box {
+        flex-basis: 80%;
+        font-family: 'Lora','serif';
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        outline: none;
+        padding: 7px;
+        padding-left: 1rem;
+        border: 2px solid #242424;
+    }
+
+    .icon {
+        font-size: 15px;
+        padding: 10px;
+        background-color: #242424;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        margin-right: 1rem;
+    }
+}

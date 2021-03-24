@@ -1,0 +1,149 @@
+.navbar {
+    background: #1c2237;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-height: 3rem;
+            max-width: 5rem;
+        }
+
+        h2 {
+          color: #fff;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+
+.nav-search {
+  flex-basis: 50%;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 2500px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu-icons {
+  display: none;
+}
+
+.nav-item {
+    height: 80px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid #f00946;
+    }
+}
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items:  center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 968px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-search {
+    margin: auto;
+  }
+
+ .nav-menu {
+    border-bottom: none;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    min-height: 300px;
+    position: absolute;
+    top:60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &.active {
+      background: #1c2237;
+      left: 0;
+      opacity: 1;
+      transition: all 0.6s ease;
+      z-index: 1;
+    }
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 0.8rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #f00946;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  }
+
+  .nav-item {
+    width: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  
+  .menu-icons {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+}
