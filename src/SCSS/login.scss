@@ -18,10 +18,10 @@
             max-width: 400px;
             align-content: space-between;
             vertical-align: center;
+            transition: all 0.4s ease;
 
             &:hover {
                 box-shadow: 2px 2px 4px 3px rgba(20,20,20,0.5);
-                transition: all 0.4s ease;
             }
 
             .head {

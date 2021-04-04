@@ -8,6 +8,11 @@ $primary : #ffff;
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    margin: 2px;
+
+    :first-child {
+        margin-right: 5px;
+    }
 }
 
 .primary {
@@ -44,6 +49,19 @@ $primary : #ffff;
 .btn--large {
     padding: 1px 26px;
     font-size: 20px;
+}
+
+.btn--icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 5px;
+    padding: 0;
+
+    &:hover {
+        width: 32px;
+        height: 32px;
+    }
 
 }
 
@@ -101,4 +119,29 @@ $primary : #ffff;
         color: $primary;
     }
 }
+
+.icon--blue {
+    background-color: #276afb;
+    color: $primary;
+    border: none;
+    
+    &:hover{
+        background-color: #276afc;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 5px 2px #276afc;
+    }
+}
+
+.icon--green {
+    background-color: #276;
+    color: $primary;
+    border: none;
+    
+    &:hover{
+        background-color: #277;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 5px 2px #277;
+    }
+}
+
 
